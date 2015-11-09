@@ -1,6 +1,6 @@
 # storage
 
-storage.js是一个轻量级的前端数据存储组件，支持localStorage、cookie、userData
+[storage.js](https://github.com/tjuking/storage/blob/master/storage.js)是一个轻量级的前端数据存储组件，支持localStorage、cookie、userData
 
 
 ### 特点
