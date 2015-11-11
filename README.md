@@ -1,19 +1,20 @@
 # storage
 
-轻量级的前端数据存储组件，支持localStorage、cookie、userData。
+[storage.js](https://github.com/tjuking/storage/blob/master/storage.js)是一个轻量级的前端数据存储组件，支持localStorage、cookie、userData
 
 
 ### 特点
 
 * 结合localStorage和userData，提供兼容更多浏览器的本地存储方案
-* 能够为本地存储数据设置过期时间
-* 提供cookie的相关接口
-* 能够批量存储数据
-* 在支持JSON的浏览器，可直接进行JSON数据的存储和读取
+* 支持为localStorage和userData存储的数据设置过期时间
+* 提供cookie的相关操作接口
+* 支持批量存储数据
+* 在支持JSON的浏览器可进行JSON数据的存储和读取
+* 使用安全，不会因为特性不支持的情况导致报错（详情可查看[caniuse](http://caniuse.com/#feat=namevalue-storage)中的已知问题）
 
 ### 接口
 
-操作成功返回`true`，没操作或操作不成功则返回`false`
+操作成功返回`true`（如果是获取数据的接口则返回存储的值），没操作或操作不成功则返回`false`
 
 #### localStorage和userData
 
